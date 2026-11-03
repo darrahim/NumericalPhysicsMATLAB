@@ -48,25 +48,5 @@ The spectral fitter needs Curve Fitting Toolbox and Signal Processing Toolbox. I
 - The optics example is a single triangular aperture. The first nonzero transform zero is 4*pi/w when w is the full support width.
 - The exploratory transcendental equation is not presented as a derived quantum-well model. Its sign-change search does not guarantee detection of tangential roots.
 
-## Validation status
 
-MATLAB/Octave was unavailable in the preparation environment, so these revised `.m` files have **not yet been executed in MATLAB**. `run_validation.m` supplies checks for the finite-well roots, Laplace boundary preservation, residual convergence and grid refinement. Run it in MATLAB before relying on results.
-
-Independent Python/SciPy reference calculations were used to check the revised finite-well equations, Laplace discretisation, wavefunction normalisation and aperture transform. These checks validate the numerical reasoning, not MATLAB syntax, toolbox behaviour or the experimental fitting workflow. See `VALIDATION.md` for the recorded results.
-
-## File renaming
-
-| Original | Revised |
-| --- | --- |
-| `Part2.m` | `monte_carlo/estimate_hypersphere_volume.m` |
-| `Part3.m` | `monte_carlo/estimate_toroidal_mass_properties.m` |
-| `Part4.m` | `monte_carlo/integrate_over_disk.m` |
-| `Laplace.m` | `electrostatics/laplace_equation_demo.m` plus `solve_laplace_sor.m` |
-| `Theoretical.m` | `quantum_wells/predict_quantum_well_pl.m` |
-| `finite_well_levels.m` | `quantum_wells/finite_well_levels.m` |
-| `fittingcode.m` | `quantum_wells/fit_photoluminescence_spectra.m` |
-| `Q310.m` | `quantum_mechanics/wavefunction_evolution_demo.m` |
-| `Q311.m` | `exploratory/transcendental_equation_roots.m` |
-| `optics.m` | `optics/triangular_aperture_diffraction.m` |
-
-Original coursework was reorganised and revised with AI assistance. Duplicate submission archives and the archive-only `Tarball.m` utility are omitted.
+Original coursework was reorganised and revised with AI assistance. 
